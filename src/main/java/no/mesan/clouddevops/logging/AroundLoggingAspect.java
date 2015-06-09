@@ -55,7 +55,7 @@ public class AroundLoggingAspect {
                 output = "result: " + result;
             }
 
-            String params = String.format("Arguments: %s", arguments.toString());
+            String params = String.format("Arguments: %s", arguments);
             String logStr = String.format("%s() duration: %dms arguments: %s %s", methodName, sw.getTotalTimeMillis(), params, output);
             log.info(logStr);
 
