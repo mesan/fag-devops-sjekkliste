@@ -1,4 +1,7 @@
 # azure-java-application-insights
+
+[![Build Status](https://ci.dag.im/buildStatus/icon?job=azure-java-application-insights)](https://ci.dag.im/job/azure-java-application-insights)
+
 Java i [Azure](http://azure.microsoft.com/en-us/) med [Application Insights](http://azure.microsoft.com/en-us/services/application-insights/)
 
 Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er laget med [Spring Boot](http://projects.spring.io/spring-boot/) og benytter SQL Server i Azure.
@@ -20,7 +23,7 @@ Da det ikke er noe GUI så benytt gjerne en REST-klient. Det gjør lagring av da
 #### Legg til en Todo
 `POST /todo`
 
-*Input:*
+Forventet input:
 
 ```json
     {
@@ -32,7 +35,7 @@ Da det ikke er noe GUI så benytt gjerne en REST-klient. Det gjør lagring av da
 #### Endre en Todo
 `PUT /todo`
 
-*Input:*
+Forventet input:
 
 ```json
     {
