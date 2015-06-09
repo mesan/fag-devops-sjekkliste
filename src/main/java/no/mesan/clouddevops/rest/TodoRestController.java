@@ -23,7 +23,7 @@ public class TodoRestController {
     }
 
     @RequestMapping(method = RequestMethod.PUT)
-    public Todo update(@RequestBody Todo todo) {
+    public Todo update(@RequestBody final Todo todo) {
         return todoService.update(todo);
     }
 
