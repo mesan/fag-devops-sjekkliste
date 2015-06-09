@@ -22,10 +22,12 @@ Da det ikke er noe GUI så benytt gjerne en REST-klient. Det gjør lagring av da
 
 Forventet input:
 
+```json
     {
       "title": "eksempeltittel",
       "content": "beskrivelse for todo"
     }
+```
     
 #### Endre en Todo
 `PUT /todo`
@@ -35,8 +37,8 @@ Forventet input:
 ```json
     {
       "id": 1,
-      "title": title,
-      "content": content,
+      "title": "ny tittel",
+      "content": "nytt innhold",
       "completed": true
     }
 ```
@@ -52,9 +54,9 @@ Denne brukes for enkelt å få en stack trace og se hvordan det logges i Azure.
 
 #### Ytelsestesting
 
-##### Regn ut Pi med `{decimals}` desimaler
+##### Regn ut Pi med `n` desimaler
 
- `GET /api/pi/{decimals}`
+ `GET /api/pi/{n}`
 
 ##### Sorter et array med lengde `n`
 
