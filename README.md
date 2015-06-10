@@ -64,8 +64,3 @@ Denne brukes for enkelt å få en stack trace og se hvordan det logges i Azure.
 ##### Sorter et array med lengde `n`
 
 `GET /api/sort/{n}`
-
-### Deployment til Microsoft
-`mvn clean package -P deployazure -Dftp_host="host" -Dftp_user="ftpuser" -Dftp_password="pw" -Ddb_user="dbuser" -Ddb_password="pw"`
-
-Merk fnuttene (") rundt brukernavn og passord. De er nødvendig for å slippe escaping.
