@@ -1,6 +1,6 @@
 # Sjekkliste
 
-[![Build Status](https://ci.dag.im/buildStatus/icon?job=azure-java-application-insights)](https://ci.dag.im/job/azure-java-application-insights)
+[![Build Status](https://ci.dag.im/buildStatus/icon?job=sjekkliste-build)](https://ci.dag.im/job/sjekkliste-build)
 
 Java i [Azure](http://azure.microsoft.com/en-us/) med [Application Insights](http://azure.microsoft.com/en-us/services/application-insights/)
 
