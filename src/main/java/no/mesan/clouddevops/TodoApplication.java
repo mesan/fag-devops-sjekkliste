@@ -1,6 +1,5 @@
 package no.mesan.clouddevops;
 
-import com.microsoft.applicationinsights.web.internal.WebRequestTrackingFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -30,8 +29,8 @@ public class TodoApplication extends SpringBootServletInitializer {
     @Bean
     public FilterRegistrationBean filterRegistrationBean() {
         final FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
-        final WebRequestTrackingFilter webRequestTrackingFilter = new WebRequestTrackingFilter();
-        filterRegistrationBean.setFilter(webRequestTrackingFilter);
+//        final WebRequestTrackingFilter webRequestTrackingFilter = new WebRequestTrackingFilter();
+//        filterRegistrationBean.setFilter(webRequestTrackingFilter);
         return filterRegistrationBean;
     }
 }

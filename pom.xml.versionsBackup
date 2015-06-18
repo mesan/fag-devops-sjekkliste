@@ -68,7 +68,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.mesan.devops</groupId>
     <artifactId>sjekkliste</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.0-SNAPSHOT</version>
 
     <packaging>war</packaging>
 
@@ -86,7 +86,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <slf4j.version>1.6.4</slf4j.version>
         <logback.version>1.0.1</logback.version>
-        <app.id>valiant-acumen-95716</app.id>
+        <app.id>DevOps</app.id>
         <app.version>1</app.version>
         <app.engine.version>1.9.21</app.engine.version>
         <gcloud.plugin.version>0.9.58.v20150505</gcloud.plugin.version>
