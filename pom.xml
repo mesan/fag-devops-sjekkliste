@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>no.mesan.cloud-devops</groupId>
-    <artifactId>azure-java-application-insights</artifactId>
+    <groupId>no.mesan.devops</groupId>
+    <artifactId>sjekkliste</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -84,56 +84,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>deployazure</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-antrun-plugin</artifactId>
-                        <version>1.8</version>
-                        <executions>
-                            <execution>
-                                <id>ftp</id>
-                                <phase>package</phase>
-                                <configuration>
-                                    <target>
-                                        <ftp action="send"
-                                             server="${ftp_host}"
-                                             remotedir="/site/wwwroot/webapps"
-                                             userid="${ftp_user}"
-                                             password="${ftp_password}"
-                                             depends="yes"
-                                             verbose="yes">
-                                            <fileset dir="${basedir}/target">
-                                                <include name="${project.build.finalName}.war"/>
-                                            </fileset>
-                                        </ftp>
-                                    </target>
-                                </configuration>
-                                <goals>
-                                    <goal>run</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <dependencies>
-                            <dependency>
-                                <groupId>commons-net</groupId>
-                                <artifactId>commons-net</artifactId>
-                                <version>1.4.1</version>
-                            </dependency>
-                            <dependency>
-                                <groupId>org.apache.ant</groupId>
-                                <artifactId>ant-commons-net</artifactId>
-                                <version>1.8.1</version>
-                            </dependency>
-                        </dependencies>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
     <repositories>
         <repository>

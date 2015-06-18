@@ -1,4 +1,4 @@
-# azure-java-application-insights
+# Sjekkliste
 
 [![Build Status](https://ci.dag.im/buildStatus/icon?job=azure-java-application-insights)](https://ci.dag.im/job/azure-java-application-insights)
 
