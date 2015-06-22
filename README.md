@@ -63,3 +63,9 @@ Denne brukes for enkelt å få en stack trace og se hvordan det logges i Azure.
 ##### Sorter et array med lengde `n`
 
 `GET /api/sort/{n}`
+
+#### Health service
+
+##### Se hvilket versjonsnummer som ligger ute, og når det ble bygget
+
+`GET /api/health`
