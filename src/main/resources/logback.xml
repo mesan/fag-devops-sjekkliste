@@ -21,9 +21,9 @@
 
     <logger name="no.mesan.clouddevops" level="INFO"/>
 
-    <root level="WARN">
+    <root level="INFO">
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="aiAppender"/>
+        <!--<appender-ref ref="aiAppender"/>-->
     </root>
 
 </configuration>
