@@ -3,6 +3,15 @@
 
 Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er laget med [Spring Boot](http://projects.spring.io/spring-boot/) og benytter SQL Server i Azure.
 
+### For å kjøre i docker
+
+1. Installer Docker og Docker Compose
+
+2. `docker-compose up -d`
+
+3. Gå til `http://localhost:8080`
+
+
 ### Det som trengs
 - [Java 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html) eller nyere.
 - [Maven](http://maven.apache.org/), følg installasjonsbeskrivelsen på nedlastingssiden.
