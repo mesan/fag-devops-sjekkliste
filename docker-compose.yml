@@ -1,0 +1,19 @@
+sjekkliste:
+  image: monsendag/sjekkliste
+  ports:
+   - "8080:8080"
+  links:
+    - mysql
+  environment:
+    DATASOURCE_DRIVER: "com.mysql.jdbc.Driver"
+    DATASOURCE_URL: "jdbc:mysql://mysql:3306/sjekkliste"
+    DATASOURCE_USER: "user"
+    DATASOURCE_PASSWORD: "trololo"
+
+mysql:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: "oksepoksegopksepgok"
+    MYSQL_USER: "user"
+    MYSQL_PASSWORD: "trololo"
+    MYSQL_DATABASE: "sjekkliste"
