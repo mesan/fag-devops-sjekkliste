@@ -1,5 +1,6 @@
 # Sjekkliste
 
+[![](https://badge.imagelayers.io/monsendag/sjekkliste:latest.svg)](https://imagelayers.io/?images=monsendag/sjekkliste:latest 'Get your own badge on imagelayers.io')
 
 Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er laget med [Spring Boot](http://projects.spring.io/spring-boot/) og benytter SQL Server i Azure.
 
