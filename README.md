@@ -25,10 +25,10 @@ Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er l
 Da det ikke er noe GUI så benytt gjerne en REST-klient. Det gjør lagring av data enklere.
 
 #### List alle Todos
-`GET /todo`
+`GET /api/todo`
 
 #### Legg til en Todo
-`POST /todo`
+`POST /api/todo`
 
 Forventet input:
 
@@ -40,7 +40,7 @@ Forventet input:
 ```
     
 #### Endre en Todo
-`PUT /todo`
+`PUT /api/todo`
 
 Forventet input:
 
@@ -54,7 +54,7 @@ Forventet input:
 ```
 
 #### Slette en Todo
-`DELETE /todo/{id}`
+`DELETE /api/todo/{id}`
 
 #### Fremprovosere exception
 Denne brukes for enkelt å få en stack trace og se hvordan det logges i Azure.
