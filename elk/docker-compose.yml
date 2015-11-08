@@ -1,0 +1,46 @@
+sjekkliste:
+  image: monsendag/sjekkliste
+  ports:
+   - "8080:8080"
+  links:
+    - mysql
+  environment:
+    DATASOURCE_DRIVER: "com.mysql.jdbc.Driver"
+    DATASOURCE_URL: "jdbc:mysql://mysql:3306/sjekkliste"
+    DATASOURCE_USER: "user"
+    DATASOURCE_PASSWORD: "trololo"
+
+mysql:
+  image: mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: "oksepoksegopksepgok"
+    MYSQL_USER: "user"
+    MYSQL_PASSWORD: "trololo"
+    MYSQL_DATABASE: "sjekkliste"
+
+elasticsearch:
+  image: elasticsearch
+  command: elasticsearch -Des.network.host=0.0.0.0
+
+logstash:
+  image: logstash
+  command: logstash -f /etc/logstash/conf.d/logstash.conf
+  volumes:
+    - ./logstash/config/:/etc/logstash/conf.d
+  ports:
+    - "5000:5000"
+  links:
+    - elasticsearch
+#Creating a dummy log entry, source http://elk-docker.readthedocs.org/#creating-dummy-log-entry
+# log in to logstash instance and run command
+# /opt/logstash/bin/logstash -e 'input { stdin { } } output { elasticsearch { hosts => ["elasticsearch"] } }'
+# wait for it to finish and start logging
+
+kibana:
+  image: kibana
+  volumes:
+    - ./kibana/config/:/opt/kibana/config/
+  ports:
+    - "5601:5601"
+  links:
+    - elasticsearch
