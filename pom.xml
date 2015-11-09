@@ -27,13 +27,6 @@
         <app.version>1</app.version>
         <app.engine.version>1.9.21</app.engine.version>
         <gcloud.plugin.version>0.9.58.v20150505</gcloud.plugin.version>
-        <start-class>no.mesan.clouddevops.TodoApplication</start-class>
-        <tomcat.version>7.0.59</tomcat.version>
-        <!-- use UTF-8 for everything -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <slf4j.version>1.6.4</slf4j.version>
-        <logback.version>1.0.1</logback.version>
         <pom.buildTime>${maven.build.timestamp}</pom.buildTime>
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ssZ</maven.build.timestamp.format>
     </properties>
