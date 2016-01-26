@@ -2,7 +2,7 @@
 
 [![](https://badge.imagelayers.io/monsendag/sjekkliste:latest.svg)](https://imagelayers.io/?images=monsendag/sjekkliste:latest 'Get your own badge on imagelayers.io')
 
-Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er laget med [Spring Boot](http://projects.spring.io/spring-boot/) og benytter H2 in memory database.
+Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er laget med [Spring Boot](http://projects.spring.io/spring-boot/) og benytter SQL Server i Azure.
 
 ### For å kjøre i docker
 
@@ -25,10 +25,10 @@ Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er l
 Da det ikke er noe GUI så benytt gjerne en REST-klient. Det gjør lagring av data enklere.
 
 #### List alle Todos
-`GET /api/todos`
+`GET /api/todo`
 
 #### Legg til en Todo
-`POST /api/todos`
+`POST /api/todo`
 
 Forventet input:
 
@@ -40,7 +40,7 @@ Forventet input:
 ```
     
 #### Endre en Todo
-`PUT /api/todos`
+`PUT /api/todo`
 
 Forventet input:
 
@@ -54,7 +54,7 @@ Forventet input:
 ```
 
 #### Slette en Todo
-`DELETE /api/todos/{id}`
+`DELETE /api/todo/{id}`
 
 #### Fremprovosere exception
 Denne brukes for enkelt å få en stack trace og se hvordan det logges i Azure.

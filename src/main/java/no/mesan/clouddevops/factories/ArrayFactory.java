@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ArrayFactory {
 
-    public static int[] create(final int size, final int seed) {
+    public static int[] Create(final int size, final int seed) {
         Random r = new Random(seed);
 
         int array[] = new int[size];

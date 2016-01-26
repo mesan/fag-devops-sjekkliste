@@ -22,9 +22,7 @@ public class TodoServiceImpl implements TodoService {
     }
 
     @Override
-    public Todo update(Todo todo) {
-        return todoRepository.save(todo);
-    }
+    public Todo update(Todo todo) { return todoRepository.save(todo); }
 
     @Override
     public void delete(Long id) {

@@ -10,8 +10,7 @@ public final class PiCalculator {
     private static final BigDecimal FIVE = new BigDecimal("5");
     private static final BigDecimal TWO_THIRTY_NINE = new BigDecimal("239");
 
-    private PiCalculator() {
-    }
+    private PiCalculator() {}
 
     public static BigDecimal pi(int numDigits) {
 
@@ -38,7 +37,7 @@ public final class PiCalculator {
             xpower = xpower.divide(x.pow(2), RoundingMode.DOWN);
             term = xpower.divide(n, RoundingMode.DOWN);
             sum = add ? sum.add(term) : sum.subtract(term);
-            add = !add;
+            add = ! add;
         }
         return sum;
     }
