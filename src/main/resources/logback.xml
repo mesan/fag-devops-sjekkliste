@@ -14,17 +14,10 @@
         <target>System.err</target>
     </appender>
 
-<!--
-    <appender
-            name="aiAppender"
-            class="com.microsoft.applicationinsights.logback.ApplicationInsightsAppender">
-    </appender>
--->
     <logger name="no.mesan.clouddevops" level="INFO"/>
 
-    <root level="WARN">
+    <root level="INFO">
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="aiAppender"/>
     </root>
 
 </configuration>

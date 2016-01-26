@@ -13,10 +13,10 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 public class SortRestController {
 
     @RequestMapping(value = "/{arraySize}", method = GET)
-    public int[] Sort(@PathVariable final int arraySize) {
-        int[] array = ArrayFactory.Create(arraySize, arraySize);
+    public int[] sort(@PathVariable final int arraySize) {
+        int[] array = ArrayFactory.create(arraySize, arraySize);
 
-        ArraySorter.Sort(array);
+        ArraySorter.sort(array);
 
         return array;
     }
