@@ -2,7 +2,7 @@ package no.mesan.clouddevops.service;
 
 public class ArraySorter {
 
-    public static void Sort(int[] array) {
+    public static void sort(int[] array) {
 
         int value, index;
 
@@ -13,7 +13,7 @@ public class ArraySorter {
 
             while (index > 0 && array[index - 1] < value) {
                 array[index] = array[index - 1];
-                index --;
+                index--;
             }
             array[index] = value;
         }

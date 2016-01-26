@@ -11,9 +11,9 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @RequestMapping(value = "/api/env")
 public class EnvRestController {
 
-   @RequestMapping(method = GET)
+    @RequestMapping(method = GET)
     public Map<String, String> getEnv() {
-       return System.getenv();
+        return System.getenv();
     }
 
 }

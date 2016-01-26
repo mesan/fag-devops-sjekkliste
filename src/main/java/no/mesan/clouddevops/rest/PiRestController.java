@@ -11,8 +11,8 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 @RequestMapping(value = "/api/pi")
 public class PiRestController {
 
-   @RequestMapping(value = "/{decimals}", method = GET)
-    public BigDecimal delete(@PathVariable final int decimals) {
+    @RequestMapping(value = "/{decimals}", method = GET)
+    public BigDecimal calculatePi(@PathVariable final int decimals) {
         // regn ut variabler for pi
         return PiCalculator.pi(decimals);
     }
