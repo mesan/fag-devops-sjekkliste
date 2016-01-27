@@ -23,7 +23,7 @@ Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er l
 ##### Kjør fra terminalen med én kommandoene:
 - `mvn spring-boot:run` eller
 - `mvn clean package` etterfulgt av `java -jar target/sjekkliste-0.1.0.jar`.
-Bytt ut versjonsnummer på JAR-fila med versjonsnummer fra pom-en.
+Bytt eventuelt ut versjonsnummer på JAR-fila med versjonsnummer fra pom-en dersom det ikke stemmer.
 
 ##### Kjør fra IDE
 Kjør fra IDE ved å kjøre SjekklisteApplication.java som inneholder main metoden.
