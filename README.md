@@ -41,7 +41,7 @@ Forventet input:
       "content": "beskrivelse for todo"
     }
 ```
-    
+
 #### Endre en Todo
 `PUT /api/todos`
 
@@ -63,7 +63,6 @@ Forventet input:
 Denne brukes for enkelt å få en stack trace og se hvordan det logges i Azure.
 
 `GET /api/throwexception`
-
 
 #### Ytelsestesting
 
