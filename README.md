@@ -4,7 +4,7 @@
 
 Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er laget med [Spring Boot](http://projects.spring.io/spring-boot/) og benytter H2 in memory database.
 
-### For å kjøre i docker
+### Kjør applikasjonen i Docker
 
 1. Installer Docker og Docker Compose
 
@@ -17,7 +17,7 @@ Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er l
 - [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) eller nyere.
 - [Maven](http://maven.apache.org/), følg installasjonsbeskrivelsen på nedlastingssiden.
 
-### Kjør applikasjonen:
+### Kjør applikasjonen utenfor Docker:
 - fra kommandolinja kommandoen:
     - `mvn spring-boot:run` eller
     - `mvn clean package` etterfulgt av `java -jar target/sjekkliste-0.1.0.jar`.
@@ -74,9 +74,3 @@ Denne brukes for enkelt å få en stack trace og se hvordan det logges i Azure.
 ##### Sorter et array med lengde `n`
 
 `GET /api/sort/{n}`
-
-#### Health service
-
-##### Se hvilket versjonsnummer som ligger ute, og når det ble bygget
-
-`GET /api/health`
