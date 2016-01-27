@@ -8,4 +8,4 @@ WORKDIR /home
 
 RUN mvn clean install
 
-CMD mvn exec:java -Dexec.mainClass="no.mesan.clouddevops.TodoApplication"
+CMD mvn exec:java -Dexec.mainClass="no.mesan.clouddevops.SjekklisteApplication"
