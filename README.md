@@ -14,11 +14,14 @@ Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er l
 
 
 ### Det som trengs
-- [Java 7](http://www.oracle.com/technetwork/java/javase/downloads/index.html) eller nyere.
+- [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) eller nyere.
 - [Maven](http://maven.apache.org/), følg installasjonsbeskrivelsen på nedlastingssiden.
 
 ### Kjør applikasjonen:
-- fra kommandolinja med kommandoen: `mvn spring-boot:run`
+- fra kommandolinja kommandoen:
+    - `mvn spring-boot:run` eller
+    - `mvn clean package` etterfulgt av `java -jar target/sjekkliste-0.1.0.jar`.
+    Bytt ut versjonsnummer på JAR-fila med versjonsnummer fra pom-en.
 - fra IDE ved å kjøre TodoApplication.java som inneholder main metoden.
 
 ### Hva applikasjonen kan gjøre
