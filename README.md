@@ -12,17 +12,20 @@ Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er l
 
 3. Gå til `http://localhost:8080`
 
+### Kjør applikasjonen utenfor Docker
 
-### Det som trengs
+#### Det som trengs
+
 - [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) eller nyere.
 - [Maven](http://maven.apache.org/), følg installasjonsbeskrivelsen på nedlastingssiden.
 
-### Kjør applikasjonen utenfor Docker:
-- fra kommandolinja kommandoen:
-    - `mvn spring-boot:run` eller
-    - `mvn clean package` etterfulgt av `java -jar target/sjekkliste-0.1.0.jar`.
-    Bytt ut versjonsnummer på JAR-fila med versjonsnummer fra pom-en.
-- fra IDE ved å kjøre TodoApplication.java som inneholder main metoden.
+##### Kjør fra terminalen med én kommandoene:
+- `mvn spring-boot:run` eller
+- `mvn clean package` etterfulgt av `java -jar target/sjekkliste-0.1.0.jar`.
+Bytt ut versjonsnummer på JAR-fila med versjonsnummer fra pom-en.
+
+##### Kjør fra IDE
+Kjør fra IDE ved å kjøre SjekklisteApplication.java som inneholder main metoden.
 
 ### Hva applikasjonen kan gjøre
 Da det ikke er noe GUI så benytt gjerne en REST-klient. Det gjør lagring av data enklere.
