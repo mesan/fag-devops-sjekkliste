@@ -1,4 +1,4 @@
-FROM java:8
+FROM java
 
 ADD target/sjekkliste-0.1.0.jar /sjekkliste.jar
 

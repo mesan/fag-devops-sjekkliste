@@ -4,12 +4,10 @@ elasticsearch:
   command: elasticsearch -Des.network.host=0.0.0.0
 
 logstash:
-  image: logstash
+  build: elk/logstash
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
     - ./elk/logstash/config/:/etc/logstash/conf.d
-  ports:
-    - "5000:5000"
   links:
     - elasticsearch
 
@@ -26,3 +24,15 @@ kibana:
     - "5601:5601"
   links:
     - elasticsearch
+
+topbeat:
+  image: athieriot/topbeat
+  pid: host
+  cap_add:
+    - ALL
+  links:
+    - logstash:logstash
+  environment:
+    PROFILE: "logstash"
+    HOST: "logstash"
+    PORT: "5044"
