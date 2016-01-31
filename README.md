@@ -9,9 +9,13 @@ Applikasjonen er veldig enkel. Det er en Todoliste. Den har et RESTful API, er l
 
 1. Installer Docker og Docker Compose
 
-2. `docker-compose up -d`
+2. Bygg applikasjonen
+    1. `mvn package`
+    2. `docker-compose build`
 
-3. Gå til `http://localhost:8080`
+3. `docker-compose up -d`
+
+4. Gå til `http://localhost:8080`
 
 ### Kjør applikasjonen utenfor Docker
 
