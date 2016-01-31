@@ -1,5 +1,5 @@
 sjekkliste:
-  image: monsendag/sjekkliste
+  build: .
   ports:
    - "8080:8080"
   links:

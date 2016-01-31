@@ -1,11 +1,7 @@
-FROM williamyeh/java7
+FROM java:8
 
-ADD . /home
+ADD target/sjekkliste-0.1.0.jar /sjekkliste.jar
 
-RUN apt-get update && apt-get install -y maven
+WORKDIR /
 
-WORKDIR /home
-
-RUN mvn clean install
-
-CMD mvn exec:java -Dexec.mainClass="no.mesan.clouddevops.SjekklisteApplication"
+CMD java -jar /sjekkliste.jar
