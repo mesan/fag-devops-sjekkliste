@@ -60,13 +60,13 @@ elasticsearch.requestTimeout: 300000
 # pid.file: /var/run/kibana.pid
 
 # If you would like to send the log output to a file you can set the path below.
-# logging.dest: stdout
+# LoggingAspect.dest: stdout
 
-# Set this to true to suppress all logging output.
-# logging.silent: false
+# Set this to true to suppress all LoggingAspect output.
+# LoggingAspect.silent: false
 
-# Set this to true to suppress all logging output except for error messages.
-# logging.quiet: false
+# Set this to true to suppress all LoggingAspect output except for error messages.
+# LoggingAspect.quiet: false
 
 # Set this to true to log all events, including system usage information and all requests.
-# logging.verbose
+# LoggingAspect.verbose

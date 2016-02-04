@@ -1,5 +1,6 @@
 package no.mesan.clouddevops.rest;
 
+import no.mesan.clouddevops.annotation.Log;
 import no.mesan.clouddevops.service.PiCalculator;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,8 +12,9 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 @RequestMapping(value = "/api/pi")
 public class PiRestController {
 
+    @Log
     @RequestMapping(value = "/{decimals}", method = GET)
-    public BigDecimal calculatePi(@PathVariable final int decimals) {
+    public BigDecimal delete(@PathVariable final int decimals) {
         // regn ut variabler for pi
         return PiCalculator.pi(decimals);
     }

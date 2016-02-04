@@ -14,7 +14,7 @@ logstash:
 #Creating a dummy log entry, source http://elk-docker.readthedocs.org/#creating-dummy-log-entry
 # log in to logstash instance and run command
 # /opt/logstash/bin/logstash -e 'input { stdin { } } output { elasticsearch { hosts => ["elasticsearch"] } }'
-# wait for it to finish and start logging
+# wait for it to finish and start LoggingAspect
 
 kibana:
   image: kibana
