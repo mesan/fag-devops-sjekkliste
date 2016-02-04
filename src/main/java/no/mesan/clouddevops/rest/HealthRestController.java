@@ -1,5 +1,6 @@
 package no.mesan.clouddevops.rest;
 
+import no.mesan.clouddevops.annotation.Log;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,6 +20,7 @@ public class HealthRestController {
     @Value("${pom.buildTime}")
     private String buildTime;
 
+    @Log
     @RequestMapping(method = RequestMethod.GET)
     public Map<String, String> getHealth() {
         Map<String, String> values = new HashMap<String, String>();

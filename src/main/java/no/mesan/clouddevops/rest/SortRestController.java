@@ -1,5 +1,6 @@
 package no.mesan.clouddevops.rest;
 
+import no.mesan.clouddevops.annotation.Log;
 import no.mesan.clouddevops.factories.ArrayFactory;
 import no.mesan.clouddevops.service.ArraySorter;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +13,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 @RequestMapping(value = "/api/sort")
 public class SortRestController {
 
+    @Log
     @RequestMapping(value = "/{arraySize}", method = GET)
     public int[] Sort(@PathVariable final int arraySize) {
         int[] array = ArrayFactory.Create(arraySize, arraySize);
