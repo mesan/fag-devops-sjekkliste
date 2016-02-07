@@ -1,4 +1,3 @@
-
 elasticsearch:
   image: elasticsearch
   command: elasticsearch -Des.network.host=0.0.0.0
@@ -31,8 +30,17 @@ topbeat:
   cap_add:
     - ALL
   links:
-    - logstash:logstash
+    - logstash
   environment:
     PROFILE: "logstash"
     HOST: "logstash"
     PORT: "5044"
+
+filebeat:
+  build: elk/filebeat
+  links:
+    - logstash
+  volumes:
+    - ./elk/filebeat/config/:/config/
+    - ./elk/filebeat/log/:/var/log/test/
+

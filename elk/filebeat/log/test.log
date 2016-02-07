@@ -1,0 +1,32 @@
+elasticsearch_1 | [2016-02-07 16:54:02,250][INFO ][cluster.service          ] [Eson the Searcher] new_master {Eson the Searcher}{KjTtlvUAQXyVMhsLVSGr0w}{172.17.0.2}{172.17.0.2:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+elasticsearch_1 | [2016-02-07 16:54:02,307][INFO ][http                     ] [Eson the Searcher] publish_address {172.17.0.2:9200}, bound_addresses {[::]:9200}
+elasticsearch_1 | [2016-02-07 16:54:02,309][INFO ][node                     ] [Eson the Searcher] started
+elasticsearch_1 | [2016-02-07 16:54:02,434][INFO ][gateway                  ] [Eson the Searcher] recovered [0] indices into cluster_state
+topbeat_1       | 2016/02/07 16:54:03.020793 single.go:126: INFO Connecting error publishing events (retrying): dial tcp 172.17.0.6:5044: getsockopt: connection refused
+topbeat_1       | 2016/02/07 16:54:03.020845 single.go:152: INFO send fail
+topbeat_1       | 2016/02/07 16:54:03.020861 single.go:159: INFO backoff retry: 1s
+topbeat_1       | 2016/02/07 16:54:04.025606 single.go:126: INFO Connecting error publishing events (retrying): dial tcp 172.17.0.6:5044: getsockopt: connection refused
+topbeat_1       | 2016/02/07 16:54:04.025666 single.go:152: INFO send fail
+topbeat_1       | 2016/02/07 16:54:04.025680 single.go:159: INFO backoff retry: 2s
+topbeat_1       | 2016/02/07 16:54:06.027003 single.go:126: INFO Connecting error publishing events (retrying): dial tcp 172.17.0.6:5044: getsockopt: connection refused
+topbeat_1       | 2016/02/07 16:54:06.027159 single.go:152: INFO send fail
+topbeat_1       | 2016/02/07 16:54:06.027194 single.go:159: INFO backoff retry: 4s
+logstash_1      | Error: Expected one of #, if, ", ', } at line 4, column 3 (byte 33) after input {
+logstash_1      | 	tcp {
+logstash_1      | 		port => 5000
+logstash_1      | 	}
+logstash_1      | You may be interested in the '--configtest' flag which you can
+logstash_1      | use to validate logstash's configuration before you choose
+logstash_1      | to restart a running system.
+fagdevopssjekkliste_logstash_1 exited with code 1
+kibana_1        | {"type":"log","@timestamp":"2016-02-07T16:54:08+00:00","tags":["status","plugin:elasticsearch","info"],"pid":7,"name":"plugin:elasticsearch","state":"yellow","message":"Status changed from red to yellow - No existing Kibana index found","prevState":"red","prevMsg":"Unable to connect to Elasticsearch at http://elasticsearch:9200."}
+elasticsearch_1 | [2016-02-07 16:54:08,640][INFO ][cluster.metadata         ] [Eson the Searcher] [.kibana] creating index, cause [api], templates [], shards [1]/[1], mappings [config]
+elasticsearch_1 | [2016-02-07 16:54:09,050][INFO ][cluster.routing.allocation] [Eson the Searcher] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.kibana][0]] ...]).
+kibana_1        | {"type":"log","@timestamp":"2016-02-07T16:54:11+00:00","tags":["status","plugin:elasticsearch","info"],"pid":7,"name":"plugin:elasticsearch","state":"green","message":"Status changed from yellow to green - Kibana index ready","prevState":"yellow","prevMsg":"No existing Kibana index found"}
+topbeat_1       | 2016/02/07 16:54:28.044352 single.go:126: INFO Connecting error publishing events (retrying): dial tcp 172.17.0.6:5044: getsockopt: no route to host
+topbeat_1       | 2016/02/07 16:54:31.043979 single.go:126: INFO Connecting error publishing events (retrying): dial tcp 172.17.0.6:5044: getsockopt: no route to host
+topbeat_1       | 2016/02/07 16:54:31.044313 single.go:152: INFO send fail
+topbeat_1       | 2016/02/07 16:54:31.044490 single.go:159: INFO backoff retry: 1s
+topbeat_1       | 2016/02/07 16:54:34.043440 single.go:126: INFO Connecting error publishing events (retrying): dial tcp 172.17.0.6:5044: getsockopt: no route to host
+topbeat_1       | 2016/02/07 16:54:34.043513 single.go:152: INFO send fail
+topbeat_1       | 2016/02/07 16:54:34.043528 single.go:159: INFO backoff retry: 2s

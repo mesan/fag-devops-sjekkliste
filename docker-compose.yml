@@ -4,7 +4,6 @@ sjekkliste:
    - "8080:8080"
   links:
     - mysql
-    - logstash:logstash
   environment:
     DATASOURCE_DRIVER: "com.mysql.jdbc.Driver"
     DATASOURCE_URL: "jdbc:mysql://mysql:3306/sjekkliste"

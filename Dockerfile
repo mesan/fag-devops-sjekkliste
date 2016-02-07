@@ -1,6 +1,6 @@
 FROM java
 
-ADD target/sjekkliste-0.1.0.jar /sjekkliste.jar
+ADD build/libs/sjekkliste-0.1.0.jar /sjekkliste.jar
 
 WORKDIR /
 
