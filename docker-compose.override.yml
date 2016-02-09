@@ -5,6 +5,8 @@ elasticsearch:
 logstash:
   build: elk/logstash
   command: logstash -f /etc/logstash/conf.d/logstash.conf
+  ports:
+    - "5000:5000"
   volumes:
     - ./elk/logstash/config/:/etc/logstash/conf.d
   links:
