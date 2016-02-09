@@ -15,17 +15,16 @@
     </appender>
 
     <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>http://logstash:5000</destination>
-
+        <destination>127.0.0.1:5000</destination>
         <!-- encoder is required -->
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
     </appender>
 
     <logger name="no.mesan.clouddevops" level="INFO"/>
 
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="logstash" />
+        <appender-ref ref="logstash"/>
     </root>
 
 </configuration>
