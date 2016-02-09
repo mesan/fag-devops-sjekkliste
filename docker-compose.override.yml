@@ -35,12 +35,3 @@ topbeat:
     PROFILE: "logstash"
     HOST: "logstash"
     PORT: "5044"
-
-filebeat:
-  build: elk/filebeat
-  links:
-    - logstash
-  volumes:
-    - ./elk/filebeat/config/:/config/
-    - ./elk/filebeat/log/:/var/log/test/
-

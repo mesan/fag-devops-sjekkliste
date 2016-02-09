@@ -65,7 +65,9 @@ build/
 gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+#!gradle-wrapper.jar
+gradlew
+gradlew.bat
 
 
 target/
