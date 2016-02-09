@@ -1,3 +1,16 @@
+sjekkliste:
+  extends:
+    file: docker-compose.simple.yml
+    service: sjekkliste
+  links:
+    - mysql
+    - logstash
+
+mysql:
+  extends:
+    file: docker-compose.simple.yml
+    service: mysql
+
 elasticsearch:
   image: elasticsearch
   command: elasticsearch -Des.network.host=0.0.0.0
